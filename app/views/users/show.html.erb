@@ -1,0 +1,4 @@
+<%= @user.name %>
+<% if @user.eql?(current_user) %>
+<%= link_to "編集", mypage_path(@user) %>
+<% end %>
