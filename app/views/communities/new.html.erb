@@ -1,4 +1,17 @@
-<div>
-  <h1 class="font-bold text-4xl">Communities#new</h1>
-  <p>Find me in app/views/communities/new.html.erb</p>
-</div>
+<%= form_with model: @community do |form| %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="field">
+    <%= form.label :profile %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+
